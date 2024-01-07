@@ -4247,7 +4247,7 @@ animation-play-state: paused; /* Остановка анимации */
     justify-content: center;
 }
 .vending_wrapper_top{
-    height: 625px;
+    height: auto;
 }
 .vending_wrapper_best{
     margin-top: 20px;
@@ -4285,6 +4285,7 @@ animation-play-state: paused; /* Остановка анимации */
     height: 100%;
 }
 .vending_content_text_title{
+    margin-bottom: 20px;
     width: 100%;
     height: auto;
     text-align: left;
@@ -4385,7 +4386,7 @@ animation-play-state: paused; /* Остановка анимации */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:10px; 
+    gap:15px; 
 }
 .div_paragraf{
     width: 100%;
@@ -4862,7 +4863,7 @@ animation-play-state: paused; /* Остановка анимации */
     background-color: white;
 }
 .buy_boxer{
-    width: 80%;
+    width: 90%;
     height: auto;
     display: flex;
     flex-direction: column;

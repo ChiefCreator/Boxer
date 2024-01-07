@@ -154,6 +154,9 @@ body::-webkit-scrollbar-thumb {
     transition: var(--transit-bac);
 }
 .perspective-block{
+    background-color: var(--main-dark-color) !important;
+}
+.perspective-block_act{
     background-color: var(--second-dark-color) !important;
 }
 .perspective-block-right{

@@ -306,6 +306,7 @@ function isEmpty() {
 
 // ===
 function submitFormAndBascket() {
+    let perspective = document.querySelector(".perspective-block")
     let swiper = document.querySelector(".swiper")
     let wrapperProduct = document.querySelector(".wrapper_product")
 
@@ -316,6 +317,8 @@ function submitFormAndBascket() {
         subs.forEach(sub => {
     
             sub.addEventListener("click", function () {
+
+                perspective.classList.add("perspective-block_act")
     
                 let content = document.querySelector(".perspective-block-left");
                 content.classList.toggle("perspective-block-left-act")
@@ -355,6 +358,7 @@ function submitFormAndBascket() {
             item.addEventListener("click", function () {
                 console.log("click")
     
+                perspective.classList.add("perspective-block_act")
     
                 let content = document.querySelector(".perspective-block-left");
                 content.classList.add("perspective-block-left-act")
@@ -393,6 +397,10 @@ function submitFormAndBascket() {
     
                 onScroll()
                 removeOverBlock()
+
+                setTimeout(function () {
+                    perspective.classList.remove("perspective-block_act")
+                }, 500)
     
                 document.querySelector(".perspective-block-right").classList.remove("perspective-block-right-act")
                 document.querySelector(".perspective-block-right2").classList.remove("perspective-block-right-act2")
@@ -415,6 +423,10 @@ function submitFormAndBascket() {
     
                 onScroll()
                 removeOverBlock()
+
+                setTimeout(function () {
+                    perspective.classList.remove("perspective-block_act")
+                }, 500)
     
                 document.querySelector(".perspective-block-right").classList.remove("perspective-block-right-act")
                 document.querySelector(".perspective-block-right2").classList.remove("perspective-block-right-act2")
