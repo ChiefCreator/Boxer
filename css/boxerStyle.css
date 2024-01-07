@@ -4299,14 +4299,34 @@ animation-play-state: paused; /* Остановка анимации */
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .businesss_benefits{
     display: grid;
-    width: 85%;
+    width: 90%;
     height: 100%;
     grid-template-columns: repeat(3,33%);
     grid-template-rows: repeat(2,50%);
-    gap:20px;
+    gap:30px;
+}
+@media screen and (max-width:1120px){
+    .businesss_benefits {
+        display: grid;
+        width: 90%;
+        height: 100%;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(3,33%);
+        gap: 30px;
+    }
+    .slide2_content{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        gap:10px;
+    }
+    .businesss_benefits_wrapper{
+        height: 600px;
+        margin-bottom: 60px;
+    }
 }
 @media screen and (max-width:950px){
     .slide2_content{
@@ -4330,6 +4350,7 @@ animation-play-state: paused; /* Остановка анимации */
     }
     .businesss_benefits_wrapper{
         height: 1200px;
+        margin-bottom: 30px;
     }
 }
 @media screen and (max-width:650px){
@@ -4570,6 +4591,8 @@ animation-play-state: paused; /* Остановка анимации */
     background-color: red;
 }
 .road_boxer_item_title_p_act{
+    overflow-wrap: anywhere;
+    text-wrap: balance;
     transform: translateY(0);
     opacity: 1;
 }
@@ -4663,9 +4686,6 @@ animation-play-state: paused; /* Остановка анимации */
     }
 }
 @media screen and (max-width:350px){
-    .road_boxer_item_title_p {
-        font-size: 14px;
-    }
     .road_boxer_line{
         flex: 0 0 140px;
     }

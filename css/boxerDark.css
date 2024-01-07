@@ -184,9 +184,9 @@ body::-webkit-scrollbar-thumb {
 .line_paragraf {
     background-color: var(--second-dark-color) !important;
 }
-/* .businesss_benefits_item {
+.businesss_benefits_item{
     background-color: var(--second-dark-color) !important;
-} */
+}
 /* footer */
 .footer{
     background-color: var(--main-dark-color) !important;
