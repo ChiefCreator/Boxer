@@ -1,10 +1,25 @@
 const swiper = new Swiper('.mySwiper', {
     loop: true,
     direction: 'horizontal',
-    spaceBetween: 10,
-    slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
+    slidesPerView:4,
+    spaceBetween:10,
+
+    breakpoints: {
+        800 : {
+            slidesPerView:2,
+            spaceBetween:10,
+        },
+        1170 : {
+            slidesPerView:3,
+            spaceBetween:10,
+        },
+        1400 : {
+            slidesPerView:4,
+            spaceBetween:10,
+        }
+    },
 });
 
 
