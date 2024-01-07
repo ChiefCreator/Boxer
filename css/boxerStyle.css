@@ -3313,13 +3313,13 @@ animation-play-state: paused; /* Остановка анимации */
     transition: all .5s ease;   
     left: 0;
 }
-.card_box:hover .imgs_wrapper{
+.item_imgs:hover .imgs_wrapper{
     left: 0;
 }
-.card_box:hover .card_img_current{
+.item_imgs:hover .card_img_current{
     animation: boxAnim 2s infinite;
 }
-.card_box:hover .for_img{
+.item_imgs:hover .for_img{
      transform: scale(1.25) translateX(20%);
 }
 .spare_parts:hover .for_img{
