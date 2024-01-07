@@ -5935,3 +5935,7 @@ body::-webkit-scrollbar-thumb {
 .circle{
     background-color: rgb(235, 235, 235);
 }
+
+.swiper-slide.slide_none{
+    display: none !important;
+}

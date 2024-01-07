@@ -82,16 +82,16 @@
                                 <div class="swiper mySwiper2">
                                     <div class="swiper-wrapper main">
                                         <!-- Slides -->
-                                        <div class="swiper-slide"><img src="boxer images/standart1.png" class="color"></div>
-                                        <div class="swiper-slide ne_red_slide"><img src="boxer images/standart2.png" class="ne_red">
+                                        <div class="swiper-slide not_none"><img src="boxer images/standart1.png" class="color"></div>
+                                        <div class="swiper-slide"><img src="boxer images/standart2.png">
                                         </div>
-                                        <div class="swiper-slide ne_red_slide"><img src="boxer images/standart3.png" class="ne_red">
+                                        <div class="swiper-slide"><img src="boxer images/standart3.png">
                                         </div>
-                                        <div class="swiper-slide ne_red_slide"><img src="boxer images/standart4.png" class="ne_red">
+                                        <div class="swiper-slide"><img src="boxer images/standart4.png">
                                         </div>
-                                        <div class="swiper-slide ne_red_slide"><img src="boxer images/standart5.png" class="ne_red">
+                                        <div class="swiper-slide"><img src="boxer images/standart5.png">
                                         </div>
-                                        <div class="swiper-slide ne_red_slide"><img src="boxer images/standart6.png" class="ne_red">
+                                        <div class="swiper-slide"><img src="boxer images/standart6.png">
                                         </div>
                                     </div>
                                     <div class="swiper-button-next"></div>
@@ -100,16 +100,16 @@
                                 <div thumbsSlider="" class="swiper mySwiper thumbnail-slider">
                                     <div class="swiper-wrapper main">
                                         <!-- Slides -->
-                                        <div class="swiper-slide"><img src="boxer images/standart1.png" class="color"></div>
-                                        <div class="swiper-slide ne_red_slide"><img src="boxer images/standart2.png" class="ne_red">
+                                        <div class="swiper-slide not_none"><img src="boxer images/standart1.png" class="color"></div>
+                                        <div class="swiper-slide"><img src="boxer images/standart2.png">
                                         </div>
-                                        <div class="swiper-slide ne_red_slide"><img src="boxer images/standart3.png" class="ne_red">
+                                        <div class="swiper-slide"><img src="boxer images/standart3.png">
                                         </div>
-                                        <div class="swiper-slide ne_red_slide"><img src="boxer images/standart4.png" class="ne_red">
+                                        <div class="swiper-slide"><img src="boxer images/standart4.png">
                                         </div>
-                                        <div class="swiper-slide ne_red_slide"><img src="boxer images/standart5.png" class="ne_red">
+                                        <div class="swiper-slide"><img src="boxer images/standart5.png">
                                         </div>
-                                        <div class="swiper-slide ne_red_slide"><img src="boxer images/standart6.png" class="ne_red">
+                                        <div class="swiper-slide"><img src="boxer images/standart6.png">
                                         </div>
                                     </div>
                                 </div>
@@ -660,150 +660,13 @@
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="scripts/switchLang.js"></script>
     <script src="scripts/switchTheme.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js "></script>
     <script src="scripts/bascketJQuery.js"></script>
     <script src="scripts/bascketClassic.js"></script>
-    <script src="scripts/product.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="scripts/headerFooter.js"></script>
-    <script>
+    <script src="scripts/product.js"></script>
 
-
-        const swiper = new Swiper('.mySwiper', {
-            loop: true,
-            direction: 'horizontal',
-            spaceBetween: 10,
-            slidesPerView: 4,
-            freeMode: true,
-            watchSlidesProgress: true,
-        });
-
-
-
-        const swiper2 = new Swiper('.mySwiper2', {
-            direction: 'horizontal',
-            slidesPerView: 1,
-            loop: true,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            thumbs: {
-                swiper: swiper,
-            }
-        });
-
-
-//         let wrapper = document.querySelector(".wrapper_product")
-//         submit()
-//         function submit() {
-//             let subs = document.querySelectorAll(".sub")
-//             subs.forEach(sub => {
-//                 sub.addEventListener("click", function () {
-
-//                     let content = document.querySelector(".perspective-block-left");
-//                     content.classList.toggle("perspective-block-left-act")
-
-//                     let basketAppear = document.querySelector(".perspective-block-right2");
-//                     basketAppear.classList.toggle("perspective-block-right-act2")
-
-
-//                     let formAppear = document.querySelector(".perspective-block-right");
-
-//                     wrapper.style.maxHeight = "750px";
-
-//                     preventScroll()
-
-//                     close(content, formAppear, basketAppear)
-//                     addOverBlock()
-
-//                     scrollTo({
-//                         top: 0,
-//                         left: 0,
-//                         behavior: "smooth"
-//                     })
-//                 })
-//             })
-
-//         }
-
-//         function close(content, formAppear, basketAppear) {
-
-//             window.addEventListener("click", function (event) {
-
-//                 if (event.target.closest(".close-btn")) {
-
-//                     onScroll()
-//                     removeOverBlock()
-
-//                     setTimeout(function () {
-//                         wrapper.style.maxHeight = "5000px"
-//                     }, 500)
-
-//                     basketAppear.classList.remove("perspective-block-right-act2")
-//                     formAppear.classList.remove("perspective-block-right-act")
-//                     content.classList.remove("perspective-block-left-act")
-//                 }
-
-//                 if (event.target.closest(".overblock")) {
-
-//                     onScroll()
-//                     removeOverBlock()
-
-//                     setTimeout(function () {
-//                         wrapper.style.maxHeight = "5000px"
-//                     }, 500)
-
-//                     basketAppear.classList.remove("perspective-block-right-act2")
-//                     formAppear.classList.remove("perspective-block-right-act")
-//                     content.classList.remove("perspective-block-left-act")
-//                 }
-//             })
-//         }
-
-//         function preventScroll() {
-//     let lockPaddingValue = window.innerWidth - document.querySelector("header").offsetWidth + "px"
-//     console.log(lockPaddingValue)
-//     document.querySelector("body").style.paddingRight = lockPaddingValue
-
-//     let doc = document.querySelector("body")
-//     doc.style.overflowY = "hidden"
-//  }
-
-//  function onScroll() {
-//     document.querySelector("body").style.paddingRight = '0'
-
-//     let doc = document.querySelector("body")
-//     doc.style.overflowY = "scroll"
-//  }
-
-//         function addOverBlock() {
-//             let overBlock = document.querySelector(".overblock");
-
-//             overBlock.classList.add("act-overblock");
-//         }
-
-//         function removeOverBlock() {
-//             let overBlock = document.querySelector(".overblock");
-
-//             overBlock.classList.remove("act-overblock");
-//         }
-
-//         function sendBascket() {
-//             let btnBascket = document.querySelector(".order_btn");
-//             btnBascket.addEventListener("click", function () {
-//                 let form2 = document.querySelector(".perspective-block-right2");
-//                 form2.classList.remove("perspective-block-right-act2");
-
-//                 let form1 = document.querySelector(".perspective-block-right");
-//                 form1.classList.add("perspective-block-right-act");
-//             })
-//         }
-//         sendBascket()
-
-
-    </script>
 </body>

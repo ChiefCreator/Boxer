@@ -81,7 +81,7 @@
                     <div class="swiper mySwiper2">
                         <div class="swiper-wrapper main">
                           <!-- Slides -->
-                          <div class="swiper-slide"><img src="boxer images/junior1.png" class="color"></div>
+                          <div class="swiper-slide not_none"><img src="boxer images/junior1.png" class="color"></div>
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
@@ -89,7 +89,7 @@
                     <div thumbsSlider="" class="swiper mySwiper thumbnail-slider">
                         <div class="swiper-wrapper main">
                           <!-- Slides -->
-                          <div class="swiper-slide"><img src="boxer images/junior1.png" class="color"></div>
+                          <div class="swiper-slide not_none"><img src="boxer images/junior1.png" class="color"></div>
                         </div>
                     </div>
                 </div>
@@ -622,40 +622,11 @@
     </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="scripts/bascketJQuery.js"></script>
     <script src="scripts/bascketClassic.js"></script>
     <script src="scripts/product.js"></script>
     <script src="scripts/switchLang.js"></script>
     <script src="scripts/switchTheme.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="scripts/headerFooter.js"></script>
-        <script>
-
-
-             const swiper = new Swiper('.mySwiper', {
-    loop:true,
-    direction: 'horizontal',
-    spaceBetween: 10,
-    slidesPerView: 4,
-    freeMode:true,
-    watchSlidesProgress: true,
-  });
-
-
-
-              const swiper2 = new Swiper('.mySwiper2', {
-    direction: 'horizontal',
-    loop:true,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    thumbs : {
-        swiper: swiper,
-    }
-  });
-
- 
-        </script>
     </body>
