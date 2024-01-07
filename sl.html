@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boxer Club</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="boxerStyle.css">
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+    </head>
+    <body>
+        <style>
+            section{
+                position:relative;
+                width: 100%;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: blue;
+                overflow: hidden;
+            }
+            .swiper{
+                width: 1200px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+            .swiper-slide{
+                background-position: center;
+                background-size: cover;
+                background-color: aqua;
+                width: 400px;
+                height: 400px;
+            }
+            .sl{
+                width: 400px;
+                height: 400px;
+            }
+            .sl1{
+                background-color:brown
+            }
+            .sl2{
+                background-color:rgb(42, 165, 138)
+            }
+            .sl3{
+                background-color:rgb(118, 42, 165)
+            }
+        </style>
+
+        <section>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="sl sl1"></div>
+                  </div>
+                  <div class="swiper-slide swiper-slide2">
+                    <div class="sl sl2"></div>
+                  </div>
+                  <div class="swiper-slide swiper-slide3">
+                    <div class="sl sl3"></div>
+                  </div>
+                  <div class="swiper-slide swiper-slide2">
+                    <div class="sl sl2"></div>
+                  </div>
+                  <div class="swiper-slide swiper-slide3">
+                    <div class="sl sl3"></div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+             const swiper = new Swiper('.swiper', {
+    grabCursor: true,
+    centeredSlides: true,
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+  
+  });
+        </script>
+    </body>

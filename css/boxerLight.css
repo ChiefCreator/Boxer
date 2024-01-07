@@ -1,0 +1,185 @@
+:root{
+    --main-light-color: white;
+    --second-light-color:rgb(235, 235, 235);
+    --third-light-color:rgb(182, 182, 182);
+    --four-light-color:rgb(68, 66, 66);
+    --main-light-color-letters: black;
+    --transit-bac: background-color 0 linear;
+    --transit-color: color 0 linear;
+}
+body{
+    color:var(--main-light-color-letters);
+    transition: var(--transit-color);
+}
+.wrapper-boxer{
+    background-color: var(--main-light-color) !important;
+    transition: var(--transit-bac);
+}
+/* header */
+.boxer_header{
+    background-color: var(--main-light-color);
+    transition: var(--transit-bac);
+}
+.boxer_header_content_buttons_wrap-btn1{
+    border-bottom: 2px solid rgb(172, 172, 172);
+    background-color: var(--main-light-color);
+    transition: var(--transit-bac) height .3s ease;
+}
+.burg_line{
+    background-color: var(--main-light-color-letters);
+}
+/* first slide */
+.content{
+    background-color: var(--main-light-color);
+    transition: var(--transit-bac);
+}
+.wrap-cont-text-block{
+    background-color: var(--second-light-color);
+    transition: var(--transit-bac);
+}
+.up{
+    background-color: var(--main-light-color);  
+    transition: var(--transit-bac);
+}
+.link_more {
+    color: black;
+}
+.card_box_item_icon, .card_box_item_icon_spare_parts2, .card_box_item_icon_spare_parts1 {
+    background-color: white;
+}
+.card_box_item_icon::before, .card_box_item_icon_spare_parts2::before, .card_box_item_icon_spare_parts1::before {
+    color: gray;
+}
+.wrap-cont-text-block-title-name-p {
+    transition: var(--transit-color); 
+}
+.sub_index{
+    border: none !important;
+}
+/* our boxers */
+.title-our{
+    background-color: var(--second-dark-color);
+}
+.wrap_our_content{
+    background-color: var(--main-light-color);
+    transition: var(--transit-bac);
+}
+.wrap_our_content_img{
+    background-color: var(--main-light-color);
+    transition: var(--transit-bac);
+}
+.btn-aim{
+    color:var(--main-light-color-letters);
+    background-color: var(--main-light-color);
+}
+.btn-aim::before,.btn-aim::after,.btn-aim-span::before,.btn-aim-span::after{
+    background-color: var(--main-light-color-letters);
+}
+.switch-btn-wrapper{
+    background-color: var(--third-light-color);
+    transition: var(--transit-bac);
+}
+.switch-btn-item{
+    background-color: var(--main-light-color);
+}
+.accordion_item_title_icon::before {
+    color: rgb(72, 72, 72);
+}
+.accordion_item_title_arrow::before {
+    color: rgb(72, 72, 72);
+}
+.accordion_item {
+    border-bottom: 2px solid rgb(219, 219, 219);
+}
+/* slide 2 */
+.slide2_content{
+    background-color: var(--main-light-color);
+    transition: var(--transit-bac);
+}
+.perspective-block{
+    background-color: var(--second-light-color);
+}
+.perspective-block-right{
+    background-color: var(--second-light-color);
+}
+.lab{
+    color:rgb(95, 95, 95);
+}
+.inp{
+    caret-color: red;
+    border-bottom: 2px solid rgb(191, 191, 191);
+}
+.textarrea {
+    background-color: transparent;
+    border-bottom: 2px solid rgb(191, 191, 191);
+}
+.line_paragraf {
+    background-color: var(--second-dark-color) !important;
+}
+/* .businesss_benefits_item {
+    background-color: rgb(235, 235, 235);
+} */
+
+/* footer */
+.footer{
+    background-color: var(--main-light-color);
+    transition: var(--transit-bac);
+}
+.questions{
+    background-color: var(--main-light-color);
+    transition: var(--transit-bac);
+}
+.production{
+    background-color: var(--four-light-color) !important;
+    transition: var(--transit-bac);
+}
+.bord {
+    background-color: rgb(219, 219, 219);
+}
+.accord_up_p {
+    transition: var(--transit-color) !important;
+}
+/* katalog */
+.wrapper_card_boxers{
+    background-color: var(--main-light-color);
+}
+.card_box_item{
+    background-color: var(--second-dark-color);
+}
+.imgs_wrapper_item {
+    background-color: white;
+}
+.item_tools_cost_text_p {
+    color: black;
+}
+.item_tools_cost_icon::before {
+    color: black;
+}
+/* classic */
+.wrapper_grid_inf {
+    background-color: white !important;
+    transition: var(--main-light-color);
+}
+.mySwiper2 .swiper-slide img {
+    background-color: var(--main-white-color);
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    background-color: transparent !important;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    background-color: transparent !important;
+}
+.color_item::before {
+    border: 1px solid gray;
+}
+.color_clone{
+    background-color: rgb(235, 235, 235);
+}
+/* rent */
+.act_inputs{
+    border-bottom:2px solid gray;
+}
+/* slide 1 */
+.circle{
+    background-color: rgb(235, 235, 235) !important;
+}

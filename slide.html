@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boxer Club</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="boxerStyle.css">
+        <link
+        rel="stylesheet"
+        href="stylesforslider.css"
+      />
+    </head>
+    <body>
+        <style>
+            .swiper{
+                width: 40%;
+                height: 700px;
+
+            }
+            .main .swiper-slide{
+                text-align: center;
+            }
+            .main .swiper-slide img{
+                width: 50%;
+                height: 50%;
+                border-radius: 2rem;
+            }
+            .thumbnail-slider{
+                width: 70%;
+                height: 200px;
+            }
+            .thumbnail-slider .swiper-wrapper{
+                width: 100%;
+                height: 200px;
+            }
+            .thumbnail-slider{
+                background-color: bisque;
+               
+            }
+            .thumbnail-slider .main{
+                background-color: aqua;
+            }
+            /* .thumbnail-slider .swiper-slide{
+                width: 100% !important;
+                height: 100px !important;
+                padding: 0.3rem;
+                border-radius: 2rem;
+                border: 0.2rem solid red;
+            } */
+            .thumbnail-slider .swiper-slide img{
+                width: 100px;
+                height: 100px;
+                object-fit:cover;
+                border-radius: inherit;
+            }
+            .swiper-slide-thumb-active{
+                border:0.3rem solid black !important;
+            }
+        </style>
+    
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper main">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="D:\Boxer Club\boxer_slider.jpg"></div>
+              <div class="swiper-slide"><img src="D:\Boxer Club\monets.png"></div>
+              <div class="swiper-slide"><img src="D:\Boxer Club\Rocky Boxer Standart.png"></div>
+
+              <div class="swiper-slide"><img src="D:\Boxer Club\boxer_slider.jpg"></div>
+              <div class="swiper-slide"><img src="D:\Boxer Club\monets.png"></div>
+              <div class="swiper-slide"><img src="D:\Boxer Club\Rocky Boxer Standart.png"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper thumbnail-slider">
+            <div class="swiper-wrapper main">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="D:\Boxer Club\boxer_slider.jpg"></div>
+              <div class="swiper-slide"><img src="D:\Boxer Club\monets.png"></div>
+              <div class="swiper-slide"><img src="D:\Boxer Club\Rocky Boxer Standart.png"></div>
+
+              <div class="swiper-slide"><img src="D:\Boxer Club\boxer_slider.jpg"></div>
+              <div class="swiper-slide"><img src="D:\Boxer Club\monets.png"></div>
+              <div class="swiper-slide"><img src="D:\Boxer Club\Rocky Boxer Standart.png"></div>
+            </div>
+        </div>
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+              const swiper = new Swiper('.mySwiper', {
+    loop:true,
+    direction: 'horizontal',
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode:true,
+    watchSlidesProgress: true,
+    // direction: 'horizontal',
+    // loop: true,
+    // pagination: {
+    //   el: '.swiper-pagination',
+    //   clickable: true,
+    // },
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+    // speed: 1000,
+    // autoHeight:true,
+    // slideToClickedSlide:false,
+  });
+
+  const swiper2 = new Swiper('.mySwiper2', {
+    direction: 'horizontal',
+    loop:true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs : {
+        swiper: swiper,
+    }
+  });
+        </script>
+    </body>

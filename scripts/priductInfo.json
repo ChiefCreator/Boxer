@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "imgSrc": "rocky boxer classic.webp",
+        "title":"Rocky Boxer Classic",
+        "price": 8000
+    },
+    {
+        "id": 2,
+        "imgSrc": "Rocky Boxer Standart.png",
+        "title":"Rocky Boxer Standart",
+        "price": 9000
+    },
+    {
+        "id": 3,
+        "imgSrc": "rocky boxer premium.jpg",
+        "title":"Rocky Boxer Premium",
+        "price": 10000
+    },
+    {
+        "id": 4,
+        "imgSrc": "rocky boxer junior.jpg",
+        "title":"Rocky Boxer Junior",
+        "price": 7000
+    }
+]
