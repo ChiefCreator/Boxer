@@ -60,7 +60,7 @@ body::-webkit-scrollbar-thumb {
 .sub .sub-icon-img::before{
     color: var(--four-dark-color) !important;;
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:1100px){
     .boxer_header_content_buttons_wrap-btn2.sub{
         background-color: var(--second-dark-color);
         border: 2px solid var(--second-dark-color) !important;
