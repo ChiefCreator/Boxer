@@ -169,7 +169,7 @@
 .sub .sub-icon-img::before{
     color: rgb(172, 172, 172);
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:1100px){
     .sub-icon-img::before, .sub .sub-icon-img::before{
         color: var(--main-light-color);
     }
@@ -200,7 +200,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: rgb(255, 255, 255);
+    background-color: black;
     border-radius: 10px;
 }
 .burg_line1{
@@ -4389,6 +4389,7 @@ animation-play-state: paused; /* Остановка анимации */
     overflow: hidden;
     border-radius: 30px;
     position: relative;
+    background-color: rgb(235, 235, 235);
 }
 .businesss_benefits_item_icon_wrapper{
     flex: 1 1 30%;
@@ -5452,6 +5453,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: white;
 }
 .rent-wrapp__content{
     height: auto;

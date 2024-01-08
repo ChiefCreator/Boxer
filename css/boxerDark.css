@@ -60,6 +60,9 @@ body::-webkit-scrollbar-thumb {
 .sub .sub-icon-img::before{
     color: var(--four-dark-color) !important;;
 }
+.burg_line{
+    background-color: var(--main-dark-color-letters) !important;
+}
 @media screen and (max-width:1100px){
     .boxer_header_content_buttons_wrap-btn2.sub{
         background-color: var(--second-dark-color);
@@ -222,9 +225,6 @@ body::-webkit-scrollbar-thumb {
 }
 .questions__number-circ{
     background-color: rgb(79, 83, 93) !important;
-}
-.questions__bottom{
-    background-color: var(--second-dark-color) !important;
 }
 .questions__up{
     border-bottom: 2px solid var(--second-dark-color) !important;
